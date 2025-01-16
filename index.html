@@ -139,6 +139,13 @@
                                  </li>
                                  <li><a href="faq.html">FAQ</a> </li>
                                  <li><a href="contact.html">Contact Us</a> </li>
+                                 <li>
+                                    <div class="login-box-two">
+                                       <button type="button" class="theme-btn rounded-0 border-0" data-bs-toggle="modal"
+                                           data-bs-target="#login"> Login
+                                       </button>
+                                   </div>
+                                 </li>
                               </ul>
                            </nav>
                         </div>
@@ -1157,7 +1164,6 @@
          <section class="contact-section pb-50">
             <div class="container">
                <div class="outer-box">
-                  <div class="bg bg-pattern-5"></div>
                   <div class="sec-title">
                      <span class="sub-title">GET IN TOUCH</span>
                      <h2>Let's work together</h2>
@@ -1190,15 +1196,7 @@
          </section>
          <!-- End Slider Section -->
         
-      <!-- Button trigger modal -->
-      <div class="calendar-modal modal fade" id="exampleModalCalendar" tabindex="-1" aria-labelledby="exampleModalCalendarLabel" aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered">
-           <div class="modal-content">
-             <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0PonimvlXjeBYdLElA0JbbshqDfglAcjV6HuRTK0mHWQidmuECagcNU1of3t3ECJMW0dPB-nIs?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
-           </div>
-         </div>
-      </div>
- 
+   
         </main>
          <!-- footer Section -->
          <footer class="main-footer">
@@ -1307,7 +1305,123 @@
          </footer>
          
          <!-- End footer Section -->
+             <!-- Button trigger modal -->
+      <div class="calendar-modal modal fade" id="exampleModalCalendar" tabindex="-1" aria-labelledby="exampleModalCalendarLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0PonimvlXjeBYdLElA0JbbshqDfglAcjV6HuRTK0mHWQidmuECagcNU1of3t3ECJMW0dPB-nIs?gv=true" style="border: 0" width="100%" height="600" frameborder="0"></iframe>
+           </div>
+         </div>
+      </div>
+ 
+      <!-- Modal -->
+      <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                  <div class="modal-header">
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <div class="login-register-border" id="loginbox">
+                        <div class="login-register-content">
+                              <div class="login-register-title mb-20">
+                                 <h2>Login</h2>
+                                 <p>Welcome back! Please enter your username and password to login. </p>
+                              </div>
+                              <div class="login-register-style login-register-pr">
+                                 <form action="#" method="post">
+                                    <div class="login-register-input">
+                                          <input type="text" name="user-name" placeholder="Username or email address">
+                                    </div>
+                                    <div class="login-register-input">
+                                          <input type="password" name="user-password" placeholder="Password">
+                                          
+                                    </div>
+                                    <div class="remember-me-btn">
+                                          <div class="d-flex justify-content-between">
+                                             <div>
 
+                                                <input id="checkbox" type="checkbox">
+                                                <label for="checkbox">Remember me</label>
+                                             </div>
+                                             <div class="forgot">
+                                                <a href="#">Forgot your password</a>
+                                             </div>
+                                          </div>
+                                          
+                                    </div>
+                                    <div class="btn-style-3 mt-15">
+                                          <button class="btn" type="button">Login</button>
+                                    </div>
+                                    <div class="signup-link text-center mt-20">Don’t have any account? <a
+                                             onClick="$('#loginbox').hide(); $('#signupbox').show()">Register now</a></div>
+                                 </form>
+                              </div>
+                        </div>
+                     </div>
+                     <div class="login-register-border" id="signupbox" style="display:none;">
+                        <div class="login-register-content">
+                              <div class="login-register-title mb-20">
+                                 <h2>Register</h2>
+                              
+                                 <div class="social-icon mt-3 mb-3">
+                                    <a href="javascript:void(0)">
+                                       <i class="fab fa-google"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                       <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                       <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="javascript:void(0)">
+                                       <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                              </div>
+                                 
+                                 <p>
+                                    <span>or use your email for registration</span>
+                                 </p>
+                              </div>
+                              <div class="login-register-style login-register-pr">
+                                 <form action="#" method="post">
+                                    <div class="login-register-input">
+                                          <input type="text" name="user-name" placeholder="Username ">
+                                    </div>
+                                    <div class="login-register-input">
+                                          <input type="text" name="user-email" placeholder="Email address">
+                                    </div>
+                                    <div class="login-register-input">
+                                          <input type="password" name="user-password" placeholder="Password">
+                                    </div>
+
+                                    <div class="login-register-input">
+                                          <input type="password" name="conf-password" placeholder="confirm-password">
+                                    </div>
+                                    <div class="mt-10 text-end">
+                                          <input id="Accept" type="checkbox">
+                                          <label for="Accept" class="color-1">Accept terms and conditions</label>
+                                       
+                                    </div>
+                                    <div class="btn-style-3 mt-15">
+                                          <button class="btn" type="button">Submit</button>
+                                    </div>
+                                    <div class="signup-link text-center mt-20">Alrady have a account? <a id="signinlink"
+                                             href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Login now</a>
+                                    </div>
+                                 </form>
+                              </div>
+                        </div>
+                     </div>
+                     
+                  </div>
+                  <!-- <div class="modal-footer">
+               <button type="button" class="modal-btn-two" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="  modal-btn-two">Save changes</button>
+            </div> -->
+            </div>
+         </div>
+      </div>
       <!-- JS here -->
       <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
       <script src="assets/js/vendor/jquery.min.js"></script>
